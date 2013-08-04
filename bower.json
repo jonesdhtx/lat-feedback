@@ -1,0 +1,18 @@
+{
+  "name": "lat-bootstrap",
+  "dependencies": {
+    "requirejs": "2.1.8",
+    "jquery": "2.0.1",
+    "lodash": "1.3.1",
+    "requirejs-text": "https://raw.github.com/requirejs/text/2.0.10/text.js",
+    "lat-mixins": "git@github.com:jonesdhtx/lat-mixins.git"
+  },
+  "devDependencies": {
+    "qunit": "1.12.0",
+    "lat-bootstrap": "git@github.com:jonesdhtx/lat-bootstrap.git"
+  },
+  "ignore": [
+    "**",
+    "!dist"
+  ]
+}
