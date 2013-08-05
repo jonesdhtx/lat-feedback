@@ -11,8 +11,13 @@
     "qunit": "1.12.0",
     "lat-bootstrap": "git@github.com:jonesdhtx/lat-bootstrap.git"
   },
+  "main": [
+    "dist/feedback.js",
+    "dist/feedback.css"
+  ],
   "ignore": [
     "**",
+    "!bower.json",
     "!dist"
   ]
 }
