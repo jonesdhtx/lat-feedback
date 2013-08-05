@@ -1,4 +1,4 @@
-/*! fe-lat-feedback - v0.0.0 - 2013-08-04
+/*! fe-lat-feedback - v0.0.0 - 2013-08-05
 * Copyright (c) 2013 Author Name; Licensed MIT */
 //Not using strict: uneven strict support in browsers, #392, and causes
 //problems with requirejs.exec()/transpiler plugins that may not be strict.
