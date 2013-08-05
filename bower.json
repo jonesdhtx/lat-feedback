@@ -1,7 +1,7 @@
 {
   "name": "lat-bootstrap",
   "dependencies": {
-    "requirejs": "2.1.8"
+    "requirejs": "https://raw.github.com/jrburke/requirejs/2.1.8/require.js"
   },
   "devDependencies": {
     "qunit": "1.12.0",
