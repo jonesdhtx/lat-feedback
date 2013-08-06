@@ -15,25 +15,6 @@ module.exports = function(grunt) {
     clean: {
       files: ['dist']
     },
-    concat: {
-      options: {
-        banner: '<%= banner %>',
-        stripBanners: true
-      },
-      dist: {
-        src: ['components/requirejs/require.js', '<%= concat.dist.dest %>'],
-        dest: 'dist/require.js'
-      },
-    },
-    uglify: {
-      options: {
-        banner: '<%= banner %>'
-      },
-      dist: {
-        src: '<%= concat.dist.dest %>',
-        dest: 'dist/require.min.js'
-      },
-    },
     qunit: {
       files: ['test/unit/**/*.html']
     },
@@ -109,8 +90,6 @@ module.exports = function(grunt) {
 
   // These plugins provide necessary tasks.
   grunt.loadNpmTasks('grunt-contrib-clean');
-  grunt.loadNpmTasks('grunt-contrib-concat');
-  grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-qunit');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-watch');
@@ -121,7 +100,7 @@ module.exports = function(grunt) {
   // Default task.
   grunt.registerTask('default', ['build']);
   grunt.registerTask('unit', ['jshint', 'sass:dev', 'qunit']);
-  grunt.registerTask('build', ['unit', 'clean', 'sass:dist', 'requirejs', 'concat', 'uglify']);
+  grunt.registerTask('build', ['unit', 'clean', 'sass:dist', 'requirejs']);
   grunt.registerTask('server', ['sass:dev', 'connect:development', 'watch:sass']);
   grunt.registerTask('preview', ['default', 'connect:production']);
 

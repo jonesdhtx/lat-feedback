@@ -7,7 +7,7 @@ define([
   module('feedback');
 
   test('Rendering', 1, function() {
-    main.init('#qunit-fixture');
+    main.start('#qunit-fixture');
     equal($('.feedback').length, 1, 'Should render feedback');
   });
 

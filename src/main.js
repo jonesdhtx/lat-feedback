@@ -4,8 +4,9 @@ define([
   'tpl!templates/main.tpl'
 ], function($, _, mainTemplate) {
   return {
-    init: function(target) {
+    start: function(target, data) {
       $(target || 'body').html(_.template(mainTemplate));
+      console.log('started feedback with data', data);
     }
   };
 });

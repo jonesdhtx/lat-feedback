@@ -1,5 +1,5 @@
 {
-  "name": "lat-bootstrap",
+  "name": "lat-feedback",
   "dependencies": {
     "requirejs": "https://raw.github.com/jrburke/requirejs/2.1.8/require.js"
   },
