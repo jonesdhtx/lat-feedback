@@ -56,7 +56,9 @@ module.exports = function(grunt) {
           // optimize: 'none',
           name: 'config',
           mainConfigFile: 'src/config.js',
-          out: 'dist/feedback.js'
+          out: 'dist/feedback.js',
+          almond: true,  //Wrap as stand alone lib (so require not needed by consumer of this lib)
+          wrap: true     //Wraps in an anoymous scope (used w/ almond)
         }
       }
     },
@@ -93,7 +95,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-qunit');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-contrib-requirejs');
+  grunt.loadNpmTasks('grunt-requirejs');
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-contrib-sass');
 
