@@ -5,7 +5,8 @@ require.config({
     "tpl": "../components/requirejs-text/index",
     "unit": "../test/unit",
     "dist": "../dist",
-    "components": "../components"
+    "components": "../components",
+    "lat-mixins": "../components/lat-mixins/dist"
   }
 });
 
